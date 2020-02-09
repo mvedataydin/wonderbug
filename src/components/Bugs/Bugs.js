@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import BugForm from './BugForm/BugForm';
 import BugList from './BugList/BugList';
 import BugSearch from './BugSearch/BugSearch';
 
 const Bugs = (props) => {
+  const [issues, setIssues] = useState([]);
 
   const addIssueHandler = (issue) => {
-    console.log(issue)
+    setIssues(prevIssues => [...prevIssues, issue])
+    console.log(issues)
   }
 
   return (
@@ -15,7 +17,7 @@ const Bugs = (props) => {
       <p>Hello from Bugs</p>
       <BugForm onAddIssue={addIssueHandler} />
       <BugSearch />
-      <BugList />
+      <BugList issueData={issues} />
     </>
   )
 }

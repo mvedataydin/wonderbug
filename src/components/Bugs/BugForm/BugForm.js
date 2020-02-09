@@ -17,7 +17,7 @@ const BugForm = (props) => {
         severity: selectedSeverity,
         type: selectedType,
         status: "OPEN",
-        created: new Date()
+        created: new Date().toString()
       }
     )
   }
