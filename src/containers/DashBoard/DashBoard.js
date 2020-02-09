@@ -1,11 +1,11 @@
 import React from 'react';
-import Bugs from '../../components/Bugs/Bugs';
+import Issues from '../Issues/Issues';
 
 const DashBoard = (props) => {
   return (
     <>
       <p>Hello from dashboard!</p>
-      <Bugs />
+      <Issues />
     </>
   )
 };

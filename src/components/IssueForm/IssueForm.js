@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-import classes from './BugForm.module.scss'
+import classes from './IssueForm.module.scss'
 
-const BugForm = (props) => {
+const IssueForm = (props) => {
   const [enteredDescription, setEnteredDescription] = useState('');
   const [enteredAssignee, setEnteredAssignee] = useState('')
   const [selectedSeverity, setSelectedSeverity] = useState('low');
@@ -80,4 +80,4 @@ const BugForm = (props) => {
   )
 };
 
-export default BugForm;
+export default IssueForm;

@@ -1,13 +1,13 @@
 import React from 'react';
 
-import classes from './BugList.module.scss'
+import classes from './IssueList.module.scss'
 
-const BugList = (props) => {
+const IssueList = (props) => {
   return (
     <>
       {props.issueData.map(((issue, index) => {
         return (
-          <section key={index} className={classes.BugList}>
+          <section key={index} className={classes.IssueList}>
             <div>
               Description: {issue.description}
             </div>
@@ -31,9 +31,9 @@ const BugList = (props) => {
           </section>
         )
       }))}
-      <p>This is BugList!</p>
+      <p>This is IssueList!</p>
     </>
   )
 };
 
-export default BugList;
+export default IssueList;
