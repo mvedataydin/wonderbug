@@ -3,13 +3,15 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
 import DashBoard from './containers/DashBoard/DashBoard';
+import Layout from './hoc/Layout/Layout';
 
 function App() {
   return (
-    <>
-      <h1>REACT BUG TRACKER!</h1>
-      <DashBoard />
-    </>
+    <div>
+      <Layout>
+        <DashBoard />
+      </Layout>
+    </div>
   );
 }
 
