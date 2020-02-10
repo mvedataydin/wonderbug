@@ -1,10 +1,12 @@
 import React from 'react';
+import classes from './Sidebar.module.scss';
+import NavigationItems from '../NavigationItems/NavigationItems';
 
 const Sidebar = (props) => {
   return (
-    <aside>
+    <aside className={classes.Sidebar}>
       <nav>
-        this is sidebar nav
+        <NavigationItems />
       </nav>
     </aside>
   )
