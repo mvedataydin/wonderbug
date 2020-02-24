@@ -1,15 +1,21 @@
 import React from 'react';
 
-import logo from './logo.svg';
 import './App.scss';
-import DashBoard from './containers/DashBoard/DashBoard';
-import Layout from './hoc/Layout/Layout';
+import UserProjects from './projects/pages/UserProjects';
+import Layout from './shared/hoc/Layout/Layout';
+import { Route, Switch } from 'react-router-dom';
+
 
 function App() {
   return (
     <div>
       <Layout>
-        <DashBoard />
+        <Switch>
+
+        <Route path="/:userId/projects" exact>
+          <UserProjects />
+          </Route>
+        </Switch>
       </Layout>
     </div>
   );

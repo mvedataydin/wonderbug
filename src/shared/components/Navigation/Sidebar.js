@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Sidebar.module.scss';
-import NavigationItems from '../NavigationItems/NavigationItems';
+import NavigationItems from './NavigationItems/NavigationItems';
 
 const Sidebar = (props) => {
   return (
